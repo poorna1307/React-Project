@@ -80,7 +80,7 @@ const onFormSubmit=(PData)=>{
         <div className="mt-1">
           <button onClick={restartGame}>Restart</button>
         </div>
-        <h3>{winner ? "Winner: " + winner : "Next Player: " + xO}</h3>
+        <h3>{winner ? "Winner: " + winner : history.length===10 ?"Game tie" : "Next Player: " + xO}</h3>
       </div>
       </div>
     </>
